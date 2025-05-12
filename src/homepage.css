@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Special+Gothic+Condensed+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+    overflow:auto;
+    
+
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+       
+        justify-content: center;
+        height: 100vh;
+        background-color: rgb(122, 206, 122);
+        
+
+        .span{
+            z-index: 0;
+            font-size: 95px;
+            margin-left: 5%;
+            color: rgb(255, 255, 195);
+    font-family: "Special Gothic Condensed One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  @media screen and (max-width:1024px){
+   font-size: 64px;
+}
+        }
+
+        .span1{
+            font-family: "Special Gothic Condensed One", sans-serif;
+            font-weight: 400; 
+            font-size: 20px;
+            margin-left: 5%;
+            color: rgb(241, 255, 193);
+        }
+        
+    }
+
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+
+        .file-upload{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow-y: visible;
+           height: fit-content; /* Use vh for responsiveness */
+            width: 85%;
+            border-radius: 15px; /* Percent-based border-radius may look odd */
+           
+             /* Allows scrolling if content grows */
+            padding: 20px;
+            box-sizing: border-box;
+            
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            .upload-container{
+
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .upload-icon{
+                    position: inherit;
+                    .upload{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+
+                
+            }
+
+            .preview-container{
+                margin-top: 5%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 80%;
+                width: 80%;
+                
+
+                h4{
+                    font-family: "Special Gothic Condensed One", sans-serif;
+                }
+
+                /* .imgContainer{
+                    height: 100%;
+                    
+                    position: relative;
+                    
+
+                } */
+                .imgContainer {
+                    width: 300px;
+                    height: 300px;
+                    overflow: hidden;
+                    border: 1px solid #ccc; /* Optional: for visual boundary */
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #f9f9f9; /* Optional background */
+                  }
+
+                /* img{
+                    height: fit-content;
+                    object-fit: cover;
+                } */
+
+                .imgContainer img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: contain; /* Keeps image inside without cropping */
+                  }
+
+                .submitButton{
+                    margin-top: 20px;
+                    width: 35%;
+                    padding: 12px;
+                    border-radius: 20%;
+                    border: none;
+                    background-color:rgb(122, 206, 122) ;
+                    color: white;
+                    font-family: "Special Gothic Condensed One", sans-serif;
+                    font-size: 16px;
+                }
+
+                .submitButton:hover{
+                    background-color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .Result{
+            margin: 5%;
+
+
+            span{
+             font-size: medium;
+             color: red;
+             font-weight: 200;
+             font-style: italic;
+            }
+        }
+    }
+    
+
+    }
