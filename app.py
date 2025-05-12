@@ -15,7 +15,7 @@ import pickle
 # model_path = 'model.pkl'
 # with open(model_path,'rb') as file:
 #     model=pickle.load(file)
-model = load_model('plant_disease_model.h5')
+model = load_model('my_model.keras')
 
 
 app = Flask(__name__)
