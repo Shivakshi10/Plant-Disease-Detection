@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-dropzone": "^14.3.8",
+    "react-images-upload": "^1.2.8"
+  }
+}
