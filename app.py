@@ -12,9 +12,10 @@ import pickle
 
 
 # Load model
-model_path = 'model.pkl'
-with open(model_path,'rb') as file:
-    model=pickle.load(file)
+# model_path = 'model.pkl'
+# with open(model_path,'rb') as file:
+#     model=pickle.load(file)
+model = load_model('plant_disease_model.h5')
 
 
 app = Flask(__name__)
