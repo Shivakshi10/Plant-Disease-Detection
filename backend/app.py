@@ -16,7 +16,10 @@ import pickle
 # with open(model_path,'rb') as file:
 #     model=pickle.load(file)
 
-model = load_model('plant_disease_model.h5')
+model = load_model('plant_disease_model2.h5')
+#model = load_model('plantl.h5')
+#model = load_model('plantl_fixed.keras')
+#model = tf.keras.models.load_model("plantl_fixed.keras")
 
 
 app = Flask(__name__)
