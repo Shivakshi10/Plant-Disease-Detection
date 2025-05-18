@@ -15,7 +15,7 @@ import pickle
 # model_path = 'model.pkl'
 # with open(model_path,'rb') as file:
 #     model=pickle.load(file)
- model = load_model('my_model2.keras')
+model = load_model('my_model2.keras')
 #model = load_model('/backend/plant_disease_model2.h5')
 
 
